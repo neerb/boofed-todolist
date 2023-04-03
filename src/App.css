@@ -1,38 +1,148 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=VT323&display=swap');
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  background: black;
+}
+
+h1 {
+  margin: 0;
+}
+
+.particles {
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.headtext {
+  font-family: 'VT323', monospace;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  color: greenyellow;
+  margin: 0 2rem 0 2rem;
+  width: 30%;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+.app_todoheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.app_todoheader div {
+  width: 100%;
+  height: 0;
+  border: 1px greenyellow solid;
+}
+
+.app_listform {
+  width: 600px;
+  margin: 0 auto;
+  background: brown;
+  border: 3px greenyellow solid;
+  height: 80%;
+  border-bottom-right-radius: 50px;
+  margin-top: 1rem;
+  overflow-y: hidden;
+}
+
+.app_entertaskname {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.app_entertaskname-input {
+  background: black;
+  /* box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #000, 0 1px 0 #000; */
+  border: 2px greenyellow solid;
+  height: 2rem;
+  border-radius: 3px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 6px;
+}
+
+.app-entertaskname-addbutton {
+  background-color: green;
+  height: 3rem;
+  margin: auto 0.5rem 0 1.25rem;
+  width: 25%;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.app-entertaskname-addbutton:hover {
+  transition: 0.5s ease;
+  letter-spacing: 6px;
+  background-color: greenyellow;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app_todoitems {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app_todoitems::-webkit-scrollbar {
+
+  display: none;
+}
+
+.app_todoitems ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10rem;
+}
+
+.app_label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.app_label div {
+  width: 100%;
+  height: 0;
+  border: 1px white solid;
+}
+
+.thingstodo {
+  font-family: 'VT323', monospace;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  color: white;
+  margin: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .app_listform {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app_listform {
+    padding-bottom: 1rem;
   }
 }
