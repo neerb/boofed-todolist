@@ -1,6 +1,6 @@
 {
   "homepage":"https://neerb.github.io/boofed-todolist",
-  "name": "todolist",
+  "name": "boofed-todolist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
