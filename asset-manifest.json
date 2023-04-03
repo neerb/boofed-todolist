@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/boofed-todolist/static/css/main.aa721c31.css",
+    "main.js": "/boofed-todolist/static/js/main.1d0db371.js",
+    "static/media/pointicon.png": "/boofed-todolist/static/media/pointicon.5c9ac8bcaa4863c7a32f.png",
+    "static/media/confirmedit.png": "/boofed-todolist/static/media/confirmedit.6459550420a6f5c27cb9.png",
+    "static/media/edit.png": "/boofed-todolist/static/media/edit.ad6467578496a7f5ad82.png",
+    "index.html": "/boofed-todolist/index.html",
+    "main.aa721c31.css.map": "/boofed-todolist/static/css/main.aa721c31.css.map",
+    "main.1d0db371.js.map": "/boofed-todolist/static/js/main.1d0db371.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa721c31.css",
+    "static/js/main.1d0db371.js"
+  ]
+}
